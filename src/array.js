@@ -26,6 +26,10 @@
   };
 
   Array.prototype.remove = Array.prototype.remove || function (object) {
+    if (!this.contains(object)) {
+      return undefined;
+    }
+
     var index = this.indexOf(object);
     return this.removeAt(index);
   };

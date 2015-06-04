@@ -58,17 +58,57 @@ describe('Array', function() {
 
   describe('removeAt', function() {
     it('should remove an element from array by index', function() {
-      var array = [1,2,3];
+      var array;
+
+      array = [1,2,3];
+      expect(array.removeAt(0)).toBe(1);
+      expect(array).toEqual([2,3]);
+
+      array = [1,2,3];
       expect(array.removeAt(1)).toBe(2);
       expect(array).toEqual([1,3]);
+
+      array = [1,2,3];
+      expect(array.removeAt(2)).toBe(3);
+      expect(array).toEqual([1,2]);
+
+      array = [1,2,3];
+      expect(array.removeAt(-1)).toBe(3);
+      expect(array).toEqual([1,2]);
+
+      array = [1,2,3];
+      expect(array.removeAt(-2)).toBe(2);
+      expect(array).toEqual([1,3]);
+
+      array = [1,2,3];
+      expect(array.removeAt(-3)).toBe(1);
+      expect(array).toEqual([2,3]);
+
+      array = [1,2,3];
+      expect(array.removeAt(9)).toBeUndefined();
+      expect(array).toEqual([1,2,3]);
     });
   });
 
   describe('remove', function() {
     it('should remove an element from array', function() {
-      var array = [1,2,3];
+      var array;
+
+      array = [1,2,3];
+      expect(array.remove(1)).toBe(1);
+      expect(array).toEqual([2,3]);
+
+      array = [1,2,3];
       expect(array.remove(2)).toBe(2);
       expect(array).toEqual([1,3]);
+
+      array = [1,2,3];
+      expect(array.remove(3)).toBe(3);
+      expect(array).toEqual([1,2]);
+
+      array = [1,2,3];
+      expect(array.remove(4)).toBeUndefined();
+      expect(array).toEqual([1,2,3]);
     });
   });
 
