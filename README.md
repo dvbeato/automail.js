@@ -1,4 +1,4 @@
-# AUTOMAIL JS
+# AUTOMAIL JS [![Build Status](https://travis-ci.org/dvbeato/automail.js.svg)](https://travis-ci.org/dvbeato/automail.js)
 
 Automail JS is a prototype extension for js lang
 
