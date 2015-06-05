@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/dvbeato/automail.js",
   "devDependencies": {
+    "coveralls": "^2.11.2",
     "grunt": "^0.4.5",
     "grunt-karma": "^0.11.0",
     "jasmine": "^2.3.1",
