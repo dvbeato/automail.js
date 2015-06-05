@@ -11,4 +11,17 @@ describe('String', function() {
       expect(''.capitalize()).toBe('');
     });
   });
+
+  describe('contains', function() {
+    it('should return true when string contains another string', function() {
+      expect('automail'.contains('mail')).toBeTruthy();
+      expect('automail'.contains('text')).toBeFalsy();
+      expect('automail'.contains('')).toBeTruthy();
+      expect('automail'.contains(undefined)).toBeFalsy();
+      expect('AutoMail'.contains('mail')).toBeFalsy();
+    });
+    it('should be case insensitive', function() {
+      expect('AutoMail'.contains('mail', true)).toBeTruthy();
+    });
+  });
 });

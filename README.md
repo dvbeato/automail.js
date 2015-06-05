@@ -64,6 +64,16 @@ console.log(array); // => [1,3]
 
 ## String
 
+ - **contains**
+```javascript
+
+console.log('automail'.contains('mail')); // => true
+console.log('autoMail'.contains('mail')); // => false
+
+// case insensitive
+console.log('autoMail'.contains('mail', true)); // => true
+```
+
  - **capitalize**
 ```javascript
 
