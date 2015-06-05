@@ -1,5 +1,4 @@
 
-
 describe('Array', function() {
   describe('contains', function() {
     it('should be true when contains a element in array', function() {

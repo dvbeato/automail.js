@@ -5,6 +5,7 @@ Automail JS is a prototype extension for js lang
 # Table of extended Functions
 
 1. [Array](#array)
+1. [String](#string)
 
 ## Array
 
@@ -57,6 +58,16 @@ console.log(array); // => [1,3]
 var array = [1,2,3];
 console.log(array.remove(2)); // => 2
 console.log(array); // => [1,3]
+```
+
+**[⬆ back to top](#table-of-extended-functions)**
+
+## String
+
+ - **capitalize**
+```javascript
+
+console.log('automail'.capitalize()); // => 'Automail'
 ```
 
 **[⬆ back to top](#table-of-extended-functions)**
