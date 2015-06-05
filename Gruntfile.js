@@ -6,8 +6,11 @@ module.exports = function (grunt) {
     karma: {
       options: {
         configFile: 'karma.conf.js',
-        runnerPort: 9999,
-        browsers: ['Chrome', 'Firefox']
+        runnerPort: 9999
+      },
+      run: {
+        singleRun: true,
+        browsers: ['PhantomJS']
       },
       continuous: {
         singleRun: false,
@@ -19,4 +22,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-karma');
 
   grunt.registerTask('default', ['karma:continuous']);
+  grunt.registerTask('test', ['karma:run']);
 };
