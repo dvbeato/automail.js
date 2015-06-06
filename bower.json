@@ -1,0 +1,23 @@
+{
+  "name": "automail.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dvbeato/automail.js",
+  "authors": [
+    "dvbeato <diogo.vecchiati@gmail.com>"
+  ],
+  "description": "automail js is a prototype extension for js lang",
+  "main": "package.json",
+  "keywords": [
+    "prototype",
+    "extension",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
