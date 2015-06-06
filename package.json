@@ -1,5 +1,5 @@
 {
-  "name": "automail.js",
+  "name": "automail",
   "version": "0.0.1",
   "description": "automail js is a prototype extension for js lang",
   "main": "index.js",
@@ -27,6 +27,8 @@
   "devDependencies": {
     "coveralls": "^2.11.2",
     "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.9.1",
     "grunt-karma": "^0.11.0",
     "jasmine": "^2.3.1",
     "jasmine-core": "^2.3.4",
