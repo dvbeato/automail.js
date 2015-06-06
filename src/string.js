@@ -10,4 +10,9 @@
     return this.indexOf(string) > -1;
   }
 
+  String.prototype.startsWith = String.prototype.startsWith || function(string, caseInsensitive) {
+    if (caseInsensitive) return this.toLowerCase().indexOf(string.toLowerCase()) === 0;
+    return this.indexOf(string) === 0;
+  }
+
 })();

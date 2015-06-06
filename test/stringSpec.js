@@ -24,4 +24,17 @@ describe('String', function() {
       expect('AutoMail'.contains('mail', true)).toBeTruthy();
     });
   });
+
+  describe('startsWith', function() {
+    it('should return true when string starts with another string', function() {
+      expect('automail'.startsWith('auto')).toBeTruthy();
+      expect('automail'.startsWith('text')).toBeFalsy();
+      expect('automail'.startsWith('')).toBeTruthy();
+      expect('automail'.startsWith(undefined)).toBeFalsy();
+      expect('AutoMail'.startsWith('auto')).toBeFalsy();
+    });
+    it('should be case insensitive', function() {
+      expect('AutoMail'.startsWith('auto', true)).toBeTruthy();
+    });
+  });
 });
