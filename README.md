@@ -80,4 +80,14 @@ console.log('autoMail'.contains('mail', true)); // => true
 console.log('automail'.capitalize()); // => 'Automail'
 ```
 
+ - **startsWith**
+```javascript
+
+console.log('automail'.startsWith('auto')); // => true
+console.log('AutoMail'.startsWith('auto')); // => false
+
+// case insensitive
+console.log('AutoMail'.startsWith('auto', true)); // => true
+```
+
 **[⬆ back to top](#table-of-extended-functions)**
