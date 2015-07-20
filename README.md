@@ -2,6 +2,11 @@
 
 Automail JS is a prototype extension for js lang
 
+# Installation
+
+* Bower
+```bower install -S automail```
+
 # Table of extended Functions
 
 1. [Array](#array)
