@@ -3,3 +3,4 @@
 *.iml
 *.swp
 node_modules
+npm-debug.log

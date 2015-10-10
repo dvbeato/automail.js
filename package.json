@@ -1,13 +1,15 @@
 {
   "name": "automail",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "automail js is a prototype extension for js lang",
-  "main": "index.js",
+  "main": "src/automail-module.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "build": "grunt dist",
+    "deploy": "npm publish"
   },
   "repository": {
     "type": "git",
